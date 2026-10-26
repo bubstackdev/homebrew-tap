@@ -1,19 +1,19 @@
 class Knowcode < Formula
   desc "A lightweight, local code graph for coding agents."
   homepage "https://github.com/bubstackdev/knowcode"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/bubstackdev/knowcode/releases/download/v0.2.0/knowcode-aarch64-apple-darwin.tar.gz"
-    sha256 "253aa071fc0200618600b18c50cd56cb1e9c40b41bd287707e21fa0e47f15d3a"
+    url "https://github.com/bubstackdev/knowcode/releases/download/v0.3.0/knowcode-aarch64-apple-darwin.tar.gz"
+    sha256 "1d318e0d908b4f1b019a3e19152ef57907e17181aa918a1b673401eaddba86be"
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bubstackdev/knowcode/releases/download/v0.2.0/knowcode-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f4ce7f7a4f540af97e76679fc0afcff050b4e20f125fc41125bff66d3d686c73"
+      url "https://github.com/bubstackdev/knowcode/releases/download/v0.3.0/knowcode-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "0991709be6949b2e1677a452c5be587661b6664888521e9d34619566cfd9b08a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bubstackdev/knowcode/releases/download/v0.2.0/knowcode-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "27c5b67b8115fb90b5b34edda5fe214e1f278e0247b840252fc6c019f8215a9a"
+      url "https://github.com/bubstackdev/knowcode/releases/download/v0.3.0/knowcode-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f9cca0a6255d7c7bef1fe15e3dd71ab2be6fd24641397b2d675ce83e1ef6b0aa"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
